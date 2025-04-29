@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(248, 246, 246);
+    color: rgb(62, 92, 62);
+}
+
+.hero-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    row-gap: 100px;
+}
+
+/* design for hero section backgroung using image */
+.hero-bg-img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+/* design for nav bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* design for nav logo */
+.logo img{
+    width: 50px;
+    margin-left: 50px;
+}
+
+/* design for nav buttons on the right */
+.nav-btns{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.nav-btns ul{
+    display: flex;
+    column-gap: 10px;
+}
+.nav-btns ul li{
+    list-style: none;
+}
+.nav-btns button{
+    padding: 15px 30px;
+    margin-right: 100px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+/* design for  the texts and buttons in the hero section */
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 40px;
+    font-weight: 400;
+}
+.hero-content h1 span{
+    font-size: 100px;
+}
+.hero-content p{
+    width: 50%;
+    justify-self: center;
+    text-align: center;
+    font-size: 17px;
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+    line-height: 1.5rem;
+}
+.hero-content button{
+    width: 10rem;
+    height: 3rem;
+    margin-top: 16px;
+   border: none;
+   background-color: rgb(218, 165, 32);
+   color: gray;
+   border-radius: 5px;
+}
+.hero-content button:hover{
+    background-color: rgba(218, 165, 32, 0.9);
+}
+
+/* designs for our services container */
+.Services{
+    width: 100%;
+    margin-top: 70px;
+    padding: 8px;
+
+}
+.Services >h1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+.Services h1 span:nth-child(2){
+    width: 80px;
+    height: 3px;
+    background-color: gold;
+    border-radius: 5px;
+}
+.service-details{
+    display: flex;
+    width:60%;
+    justify-content: center;
+   margin: 0 auto;
+   column-gap: 45px;
+   margin-top: 40px;
+}
+.detail{
+
+}
+.detail img{
+    width: 300px;
+}
+.detail div{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.detail h1{
+    font-size: 18px;
+}
+.detail p{
+    margin-top: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
