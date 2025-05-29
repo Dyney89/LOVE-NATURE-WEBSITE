@@ -1,150 +1,396 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(248, 246, 246);
-    color: rgb(62, 92, 62);
+body {
+  background-color: rgb(248, 246, 246);
+  color: rgb(62, 92, 62);
 }
 
-.hero-section{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color: white;
-    background: rgba(0, 0, 0, 0.2);
-    row-gap: 100px;
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  row-gap: 100px;
 }
 
-/* design for hero section backgroung using image */
-.hero-bg-img{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
+/* design for hero section background using image */
+.hero-bg-img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
 }
 
 /* design for nav bar */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 /* design for nav logo */
-.logo img{
-    width: 50px;
-    margin-left: 50px;
+.logo img {
+  width: 50px;
+  margin-left: 50px;
 }
 
 /* design for nav buttons on the right */
-.nav-btns{
-    display: flex;
-    align-items: center;
-    column-gap: 40px;
+.nav-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
-.nav-btns ul{
-    display: flex;
-    column-gap: 10px;
+.nav-btns ul {
+  display: flex;
+  column-gap: 10px;
 }
-.nav-btns ul li{
-    list-style: none;
+.nav-btns ul li {
+  list-style: none;
 }
-.nav-btns button{
-    padding: 15px 30px;
-    margin-right: 100px;
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
+.nav-btns button {
+  padding: 15px 30px;
+  margin-right: 100px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
 }
 
 /* design for  the texts and buttons in the hero section */
-.hero-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.hero-content h1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    font-size: 40px;
-    font-weight: 400;
+.hero-content h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 40px;
+  font-weight: 400;
 }
-.hero-content h1 span{
-    font-size: 100px;
+.hero-content h1 span {
+  font-size: 100px;
 }
-.hero-content p{
-    width: 50%;
-    justify-self: center;
-    text-align: center;
-    font-size: 17px;
-    padding-left: 12.5rem;
-    padding-right: 12.5rem;
-    line-height: 1.5rem;
+.hero-content p {
+  width: 50%;
+  justify-self: center;
+  text-align: center;
+  font-size: 17px;
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
+  line-height: 1.5rem;
 }
-.hero-content button{
-    width: 10rem;
-    height: 3rem;
-    margin-top: 16px;
-   border: none;
-   background-color: rgb(218, 165, 32);
-   color: gray;
-   border-radius: 5px;
+.hero-content button {
+  width: 10rem;
+  height: 3rem;
+  margin-top: 16px;
+  border: none;
+  background-color: rgb(218, 165, 32);
+  color: gray;
+  border-radius: 5px;
 }
-.hero-content button:hover{
-    background-color: rgba(218, 165, 32, 0.9);
+.hero-content button:hover {
+  background-color: rgba(218, 165, 32, 0.9);
 }
 
 /* designs for our services container */
-.Services{
-    width: 100%;
-    margin-top: 70px;
-    padding: 8px;
+.Services {
+  width: 100%;
+  margin-top: 70px;
+  padding: 8px;
+}
+.Services > h1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+.Services h1 span:nth-child(2) {
+  width: 80px;
+  height: 3px;
+  background-color: gold;
+  border-radius: 5px;
+}
+.service-details {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto;
+  column-gap: 45px;
+  margin-top: 40px;
+}
+.detail {
+}
+.detail img {
+  width: 300px;
+}
+.detail div {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.detail h1 {
+  font-size: 18px;
+}
+.detail p {
+  margin-top: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* customer section css starts here */
+.customer-div {
+  background-color: #f6f8f5;
+  height: 75vh;
+}
+.quote-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.quote-div {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  opacity: 0.1;
+  width: 50px;
+  height: -80px;
+  padding-top: 5px;
+  margin-top: 15px;
 }
-.Services >h1{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
+.customer-div h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #536942;
+  font-weight: 350;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 20px;
+  font-size: 33px;
+  width: 750px;
 }
-.Services h1 span:nth-child(2){
-    width: 80px;
-    height: 3px;
-    background-color: gold;
-    border-radius: 5px;
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+  margin-top: 25px;
+}
+
+.customer-div p {
+  color: #778965;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* customer section css ends here */
+
+/* About Us Section css starts here */
+.about-us-div {
+  display: flex;
+  padding: 80px;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  /* gap: 80px; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.about-us-div div {
+  width: 45%;
+  
+}
+.about-us-div div h5 {
+  color: rgb(153, 151, 151);
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.about-us-div div h2 {
+  color: 536942;
+  font-weight: 383;
+  font-size: 25px;
+  width: 65%;
+  margin-top: 5px;
+  line-height: 40px;
+
+  /* width: 75px; */
+}
+
+.about-us-div div p {
+  color: 778965;
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 18px;
+  width: 70%;
+  /* width: 60px; */
+  /* line-height: 20px; */
+}
+
+.about-us-div div button {
+  border-radius: 4px;
+  height: 47px;
+  width: 170px;
+  color: #4a593d;
+  border-width: 1px;
+  background-color: transparent;
+  margin-top: 45px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #4a593d;
+}
+
+.about-us-div button:hover {
+  color: rgb(173, 232, 10);
+  border-color: rgb(173, 232, 10);
+  box-shadow: none;
+}
+
+.leaf img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.leaf {
+  width: 160vh;
+}
+
+/* About Us Section css ends here */
+/* 2nd to the last section css starts here */
+.question {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.question h1 {
+  color: #536942;
+  font-size: 55px;
+  font-weight: lighter;
+  margin-top: 30px;
+}
+
+.question p {
+  font-size: 17px;
+  color: #778965;
+  width: 32%;
+  height: 20%;
+  justify-self: center;
+  padding-top: 10px;
+}
+
+.question button {
+  font-size: 15px;
+  margin-top: 50px;
+  background-color: rgb(250, 213, 5);
+  cursor: pointer;
+  height: 40px;
+  width: 160px;
+  color: #778965;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.question button:hover {
+  background-color: rgb(237, 180, 36);
+}
+.question {
+  background-image: url(footer-hero-big.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  align-content: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+/* 2nd to the last section css ends here */
+
+/* footer section css starts here */
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+}
+.ul-footer {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-top: -27px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.Tyler-div {
+  color: #778965;
+  font-size: 17px;
+  margin-top: -27px;
+  font-weight: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.green-div img {
+  width: -40px;
+  height: -60px;
+  object-fit: cover;
+}
+
+.green-div {
+  width: 100px;
+  height: 80px;
+}
+
+/* footer section css ends here */
+
+/* media querry starts here */
+@media(max-width:1024px){
+.container{
+  flex-direction: column;
+  align-content: center;
+  /* background-color: cadetblue; */
+}
+.hero-section{
+  flex-direction: column;
+  align-items: center;
 }
 .service-details{
-    display: flex;
-    width:60%;
-    justify-content: center;
-   margin: 0 auto;
-   column-gap: 45px;
-   margin-top: 40px;
+  flex-direction: column;
+  align-content: center;
 }
-.detail{
+.customer-div{
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+@media(max-width:834px){
 
 }
-.detail img{
-    width: 300px;
+
+@media(max-width:768px){
+
 }
-.detail div{
-    margin-top: 20px;
-    margin-left: 10px;
-}
-.detail h1{
-    font-size: 18px;
-}
-.detail p{
-    margin-top: 16px;
-    padding-left: 5px;
-    padding-right: 5px;
+
+@media(max-width:480px){
+
 }
